@@ -1,5 +1,5 @@
 {% set name = "astral" %}
-{% set version = "1.7.1" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88086fd2006c946567285286464b2da3294a3b0cbba4410b7008ec2458f82a07
+  sha256: 5048d9cd57c746c7bcb6bb66274542d804c5a132ee5b88e9135d4e878221a119
 
 build:
   noarch: python

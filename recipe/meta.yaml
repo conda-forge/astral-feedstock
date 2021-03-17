@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.7
-    - pip
+    - pip >3.0
   run:
     - python >=3.7
     - pytz

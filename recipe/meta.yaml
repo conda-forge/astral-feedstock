@@ -12,16 +12,17 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: "{{ PYTHON }} -m pip install . -vv"
+
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - pytz
-    - requests
+    - dataclasses
 
 test:
   imports:

@@ -123,4 +123,5 @@ Feedstock Maintainers
 =====================
 
 * [@hajapy](https://github.com/hajapy/)
+* [@jan-janssen](https://github.com/jan-janssen/)
 

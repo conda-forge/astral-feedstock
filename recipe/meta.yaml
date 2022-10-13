@@ -23,7 +23,7 @@ requirements:
     - python
     - dataclasses  # [py<37]
     - backports.zoneinfo  # [py<39]
-    - tzdata  # [win]
+    - tzdata
 
 test:
   imports:

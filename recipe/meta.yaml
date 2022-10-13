@@ -24,6 +24,8 @@ requirements:
     - dataclasses
 
 test:
+  requires:
+    - pip
   imports:
     - astral
   commands:

@@ -1,5 +1,5 @@
 {% set name = "astral" %}
-{% set version = "3.1" %}
+{% set version = "3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/astral-{{ version }}.tar.gz
-  sha256: e93b491c1e4f53686c73284438b35fb323de303e4b14767d8fadcc15c29b6ff3
+  sha256: 9b7c3b412e9e69d172cfb24be0e6addcc9f1bd01a28db8bebe66d75ccc533d88
 
 build:
   skip: true  # [py>=400 or py2k]

@@ -10,9 +10,8 @@ source:
   sha256: 9b7c3b412e9e69d172cfb24be0e6addcc9f1bd01a28db8bebe66d75ccc533d88
 
 build:
-  skip: true  # [py>=400 or py2k]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 5
 
 requirements:
   host:
@@ -21,15 +20,13 @@ requirements:
     - poetry-core
   run:
     - python
-    - dataclasses  # [py<37]
-    - backports.zoneinfo  # [py<39]
-    - tzdata  # [not win]
+    - tzdata
 
 test:
   imports:
     - astral
   commands:
-    - pip check  # [not win]
+    - pip check
   requires:
     - pip
 
